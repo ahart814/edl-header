@@ -15,7 +15,7 @@
 =======
   var headerDisplayStartDate = options.headerDisplayStartDate || new Date(2019, 12, 1)       // January 1st, 2020 - arbitrary date in the past
 >>>>>>> 67cf86f0eefd5d58915a6e379bbcff59bf3cf037
-  var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 5, 22)  // June 22nd, 2020 - Updated to stall fullpage takeover
+  var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 3, 22)  // April 22nd, 2020 - 
   var forceFullPageWidget = !!options.forceFullPageWidget
   var cookieExpirationDays = parseFloat(options.cookieExpirationDays || 1)
   var alwaysShowWidget = !!(options.alwaysShowWidget || window.location.hash.indexOf('ALWAYS_SHOW_EARTH_DAY_LIVE') !== -1)
