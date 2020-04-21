@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+  
+    <header class="edl-header" role="contentinfo">
+      <div class="edl-header__container">
+        <a class="edl-header__logo" href="#">
+          <img
+            src="images/edl-logo.png"
+            alt="{{ logo_alt }}"
+            class="edl-logo"
+          />
+        </a>
+        <div class="edl-header__main">
+          {{#with footer}}
+          <div class="edl-header__body">
+            {{{ body }}}
+            <div class="edl-link__wrapper">
+              <a class="edl-link">{{ link_text }}</a>
+              <a class="edl-link__icon">
+                <img class="edl-header__icon" src="images/circle-arrow.svg" alt="Arrow right icon" />
+              </a>
+            </div>
+          </div>
+          {{/with}}
+        </div>
+        <div class="edl-header__close">
+          <button type="button" class="edl-close" title="{{ close_banner }}">
+            <span class="edl-sr-only">{{ close_banner }}</span>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+
+
