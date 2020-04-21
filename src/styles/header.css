@@ -1,0 +1,112 @@
+/* header */
+
+.edl-header {
+  background: url('images/earth-day-live-gradient.jpg') no-repeat center top;
+  background-size: cover;
+  bottom: 0;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
+  font-family: titling-gothic-fb, sans-serif;
+  left: 0;
+  padding: 1.25rem 1.25rem;
+  position: fixed;
+  right: 0;
+  width: 100%;
+}
+
+.edl-header__close {
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3rem;
+}
+
+.edl-header__container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.edl-header__logo {
+  display: block;
+  flex: 0 0 20%;
+}
+
+.edl-header__main {
+  flex: 0 0 70%;
+  margin-top: -.4rem; /* magic number: top text align to logo */
+  margin: 0 1rem;
+}
+
+.edl-header__body {
+  color: var(--white);
+  font: normal 1rem/1.2rem titling-gothic-fb, sans-serif;
+  max-width: 26rem;
+  text-align: center;
+}
+
+.edl-link__wrapper {
+  display: inline;
+}
+
+.edl-link {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.edl-link:hover {
+  cursor: pointer;
+}
+
+.edl-header__icon {
+  vertical-align: middle;
+  max-width: 1rem;
+  padding-bottom: 5px;
+}
+
+.edl-header__icon:hover {
+  cursor: pointer;
+}
+/* Breakpoint */
+
+/* Prevent "Will you?" link from splitting across multiple lines */
+@media(min-width: 360px) and (max-width: 415px) {
+  .edl-link__wrapper {
+    display: block;
+  }
+}
+
+@media(min-width: 600px) and (max-width: 899px) {
+  .edl-header__body {
+    font: normal 1.5rem/2.2rem titling-gothic-fb, sans-serif;
+    max-width: none;
+  }
+}
+
+@media(min-width: 900px) {
+
+  .edl-header__container {
+    max-width: 60rem;
+  }
+
+  .edl-header__logo {
+    flex: 0 0 20%;
+  }
+
+  .edl-header__main {
+    flex: 1;
+    display: flex;
+  }
+
+  .edl-header__body {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+    max-width: none;
+  }
+
+  .edl-header__icon {
+    max-width: 2rem;
+  }
+}
+
