@@ -7,7 +7,7 @@
 
   // user-configurable options
   var options = window.EARTH_DAY_LIVE_OPTIONS || {}
-  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://ahart814.github.io'
+  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.earthdaylive2020.org'
   var websiteName = options.websiteName || null
   var partnerReferrer = options.partnerReferrer || null
 <<<<<<< HEAD
